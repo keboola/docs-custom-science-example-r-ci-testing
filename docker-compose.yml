@@ -5,6 +5,6 @@ services:
     image: quay.io/keboola/docker-custom-r:1.0.4
     tty: true
     stdin_open: true
-    command: /src/tests.sh
+    command: /bin/sh /src/tests.sh
     volumes:
       - ./:/src/

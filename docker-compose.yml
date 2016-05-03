@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  tests:
+    image: quay.io/keboola/docker-custom-r:1.0.4
+    tty: true
+    stdin_open: true
+    command: /bin/bash /src/tests.sh
+    volumes:
+      - ./:/src/
